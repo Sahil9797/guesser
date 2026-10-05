@@ -34,7 +34,7 @@ def GuessANumber():
                 print("Too high!")
             print("Attempts left:", guessCountLimit - guessCount)
         else:
-            print("Sorry! You used all 5 attempts.")
+            print("Sorry! You used all 6 attempts.")
             print("The secret number was:", secretNumber)
         playAgain = input("Would you like to play again? (yes/no): ")
         if playAgain.lower() != "yes":
