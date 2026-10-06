@@ -2,11 +2,11 @@ def GuessANumber():
     import random   # used to generate random numbers
 
     secretNumber = random.randint(3, 30)
-    guessCountLimit = 6
+    guessCountLimit = 5
 
     print("Welcome to the Number Guessing Game!")
     print("I have chosen a number between 3 and 30.")
-    print("You have 6 attempts to guess it.")
+    print("You have 5 attempts to guess it.")
     print("Type 'quit' at any time to exit the game.")
 
     while True:
@@ -34,7 +34,7 @@ def GuessANumber():
                 print("Too high!")
             print("Attempts left:", guessCountLimit - guessCount)
         else:
-            print("Sorry! You used all 6 attempts.")
+            print("Sorry! You used all 5 attempts.")
             print("The secret number was:", secretNumber)
         playAgain = input("Would you like to play again? (yes/no): ")
         if playAgain.lower() != "yes":
