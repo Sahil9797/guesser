@@ -23,6 +23,7 @@ def GuessANumber():
             guess = int(guess)
             if guess < 3 or guess > 30:
                 print("Your guess must be between 3 and 30.")
+                
                 continue
             guessCount += 1
             if guess == secretNumber:
